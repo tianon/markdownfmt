@@ -36,8 +36,7 @@ Final paragraph.
 	os.Stdout.Write(output)
 
 	// Output:
-	// Title
-	// =====
+	// # Title
 	//
 	// This is a new paragraph. I wonder if I have too many spaces. What about new paragraph. But the next one...
 	//
@@ -68,18 +67,15 @@ How about ` + "`this`" + ` and other stuff like *italic*, **bold** and ***super 
 	os.Stdout.Write(output)
 
 	// Output:
-	// Title
-	// =====
+	// # Title
 	//
-	// Subtitle
-	// --------
+	// ## Subtitle
 	//
 	// How about `this` and other stuff like *italic*, **bold** and ***super extra***.
 	//
 }
 
-const reference = `An h1 header
-============
+const reference = `# An h1 header
 
 Paragraphs are separated by a blank line.
 
@@ -132,8 +128,7 @@ Large spacing...
 
 Last paragraph here.
 
-An h2 header
-------------
+## An h2 header
 
 -	Paragraph right away.
 -	**Big item**: Right away after header.
@@ -176,14 +171,14 @@ Here's a numbered list:
 
 Note again how the actual text starts at 4 columns in (4 characters from the left side). Here's a code sample:
 
-` + "```" + `
+` + "```text" + `
 # Let me re-iterate ...
 for i in 1 .. 10 { do-something(i) }
 ` + "```" + `
 
 As you probably guessed, indented 4 spaces. By the way, instead of indenting the block, you can use delimited blocks, if you like:
 
-` + "```" + `
+` + "```text" + `
 define foobar() {
     print "Welcome to flavor country!";
 }
@@ -220,8 +215,7 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 | *Still*  | ` + "`renders`" + ` | **nicely** |
 | 1        | 2         | 3          |
 
-Nested Lists
-============
+# Nested Lists
 
 ### Codeblock within list
 
@@ -266,8 +260,7 @@ Nested Lists
 
 -	Item 3
 
-Line Breaks
-===========
+# Line Breaks
 
 Some text with two trailing spaces for linebreak.  ` + `
 More text immediately after.  ` + `
@@ -303,14 +296,11 @@ aaa/あああ
 ----------
 `)
 
-	expected := []byte(`タイトル
-========
+	expected := []byte(`# タイトル
 
-サブタイトル
-------------
+## サブタイトル
 
-aaa/あああ
-----------
+## aaa/あああ
 `)
 
 	output, err := markdown.Process("", input, nil)
