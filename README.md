@@ -1,8 +1,6 @@
 markdownfmt
 ===========
 
-[![Build Status](https://travis-ci.org/shurcooL/markdownfmt.svg?branch=master)](https://travis-ci.org/shurcooL/markdownfmt) [![GoDoc](https://godoc.org/github.com/shurcooL/markdownfmt?status.svg)](https://godoc.org/github.com/shurcooL/markdownfmt)
-
 Like `gofmt`, but for Markdown.
 
 ![Markdown Format Demo](https://github.com/shurcooL/atom-markdown-format/blob/master/Demo.gif?raw=true)
@@ -35,6 +33,7 @@ Editor Plugins
 -	[emacs-markdownfmt](https://github.com/nlamirault/emacs-markdownfmt) for Emacs.
 -	Built-in in Conception.
 -	[markdown-format](https://atom.io/packages/markdown-format) for Atom (deprecated).
+-	[markdownfmt](https://marketplace.visualstudio.com/itemdetails?itemName=AnmolSinghJaggi.vscode-markdownfmt) for Visual Studio Code.
 -	Add a plugin for your favorite editor here?
 
 Alternatives
