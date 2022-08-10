@@ -8,7 +8,7 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/shurcooL/markdownfmt/markdown"
+	"github.com/tianon/markdownfmt/markdown"
 )
 
 func Example() {
@@ -372,7 +372,7 @@ func TestDoubleSpacedListEnd(t *testing.T) {
 	}
 }
 
-// https://github.com/shurcooL/markdownfmt/issues/35.
+// https://github.com/tianon/markdownfmt/issues/35.
 func TestEscapeBackslashesInURLs(t *testing.T) {
 	const reference = `[Link](path\\to\\page)
 
@@ -398,7 +398,7 @@ https://path\\to\\page
 	}
 }
 
-// https://github.com/shurcooL/markdownfmt/issues/20
+// https://github.com/tianon/markdownfmt/issues/20
 func TestSuccessiveLines(t *testing.T) {
 	input := []byte(`text
 text

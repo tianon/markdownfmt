@@ -1,5 +1,5 @@
 // markdownfmt formats Markdown.
-package main // import "github.com/shurcooL/markdownfmt"
+package main // import "github.com/tianon/markdownfmt"
 
 import (
 	"bytes"
@@ -13,7 +13,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/shurcooL/markdownfmt/markdown"
+	"github.com/tianon/markdownfmt/markdown"
 	"golang.org/x/term"
 )
 

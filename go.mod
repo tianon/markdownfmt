@@ -1,4 +1,4 @@
-module github.com/shurcooL/markdownfmt
+module github.com/tianon/markdownfmt
 
 go 1.17
 

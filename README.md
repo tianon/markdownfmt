@@ -11,7 +11,7 @@ Installation
 ------------
 
 ```bash
-go get -u github.com/shurcooL/markdownfmt
+go get -u github.com/tianon/markdownfmt
 ```
 
 Add `$GOPATH/bin` to your `$PATH` or copy `$GOPATH/bin/markdownfmt` to your `$PATH`.
