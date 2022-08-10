@@ -26,6 +26,21 @@ usage: markdownfmt [flags] [path ...]
   -w=false: write result to (source) file instead of stdout
 ```
 
+With Docker CLI
+---------------
+
+Using diff mode:
+
+```sh
+docker run -it -v /home/user/repo/content.md:/data/content.md:ro --rm tianon/markdownfmt markdownfmt -d /data/content.md
+```
+
+Using write mode:
+
+```sh
+docker run -it -v /home/user/repo/content.md:/data/content.md:rw --rm tianon/markdownfmt markdownfmt -w /data/content.md
+```
+
 Editor Plugins
 --------------
 
