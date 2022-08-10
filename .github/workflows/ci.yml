@@ -22,5 +22,9 @@ jobs:
         run: go vet .
       - name: Run tests
         run: go test -v -race ./...
+      - name: Install the binary
+        run: go install -v
+      - name: Print the help of the binary
+        run: markdownfmt --help
       - name: Run the binary on the README file
         run: diff -u <(echo -n) <(markdownfmt -d README.md)
