@@ -3,7 +3,7 @@ FROM golang:1.21-alpine3.19 AS build
 WORKDIR /markdownfmt
 
 COPY go.mod go.sum ./
-RUN set -eux; go mod download; go mod verify
+RUN go mod download
 
 COPY . .
 
